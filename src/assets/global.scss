@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+body {
+  min-width: 360px;
+
+  margin: 0;
+  padding: 0;
+
+  color: $nearblack;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.headline {
+  color: $nearblack;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.link {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
